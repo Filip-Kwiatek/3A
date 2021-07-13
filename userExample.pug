@@ -1,0 +1,14 @@
+//- Index.pug
+<!DOCTYPE html>
+html
+    head
+        title Example User
+    body
+        header
+            h1 User
+            p Example User
+            hr
+        nav
+block content
+    p Firstname: #{users.firstname}, Lastname: #{users.lastname}, E-mail: #{users.email}, Password #{users.password}
+    p= User 

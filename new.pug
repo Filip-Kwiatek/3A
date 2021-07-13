@@ -1,0 +1,49 @@
+//- Index.pug
+<!DOCTYPE html>
+html
+    head
+        title New Schedule!
+form(action="/add_Schedule", method="POST")
+  p
+  | User_id:    
+  input(type="text" name="user_id" value="001" required)
+  br
+  br
+  | Day: 
+  input(type="text" name="day" value="4" required)
+  br
+  br
+  | Start_at: 
+  input(type="text" name="start_at" value="8" required)
+  br
+  br
+  | End_at: 
+  input(type="text" name="end_at" value="16" required)
+  br
+  br
+  | Day of the week 
+  input(type="radio" name="dayOfWeek" value="Monday" required)
+  labeln Monday
+  |
+  input(type="radio" name="dayOfWeek" value="Tuesday" required)
+  labeln Tuesday
+  |
+  input(type="radio" name="dayOfWeek" value="Wednesday" required)
+  labeln Wednesday
+  |
+  input(type="radio" name="dayOfWeek" value="Thursday" required)
+  labeln Thursday
+  |
+  input(type="radio" name="dayOfWeek" value="Friday" required)
+  labeln Friday
+  |
+  input(type="radio" name="dayOfWeek" value="Saturday" required)
+  labeln Saturday 
+  |
+  input(type="radio" name="dayOfWeek" value="Sunday" required)
+  labeln Sunday 
+  |
+  br
+  br
+  | Submit: 
+  input(type="submit", value="Send",data-transition='fade', data-theme='c')

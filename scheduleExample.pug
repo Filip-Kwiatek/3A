@@ -1,0 +1,14 @@
+//- Index.pug
+<!DOCTYPE html>
+html
+    head
+        title Example Schedule
+    body
+        header
+            h1 Schedule
+            p Example Schedule
+            hr
+        nav
+block content
+    p Schedules: Id: #{schedules.user_id}, Day: #{schedules.day}, Start: #{schedules.start_at}, End: #{schedules.end_at}
+    p= Schedules 

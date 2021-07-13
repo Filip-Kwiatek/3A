@@ -1,0 +1,15 @@
+//- Index.pug
+<!DOCTYPE html>
+html
+    head
+        title Users
+    body
+        header
+            h1 Users
+            p All users here!
+            hr
+        nav
+block content
+    ul 
+        each singleUser in users
+            li User: Firstname: #{singleUser.firstname}, Lastname: #{singleUser.lastname}, E-mail: #{singleUser.email}, Password #{singleUser.password}

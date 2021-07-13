@@ -1,0 +1,17 @@
+//- Index.pug
+<!DOCTYPE html>
+html
+    head
+        title Schedule
+    body
+        header
+            h1 Schedule
+            p All schedules here!
+            hr
+        nav
+block content
+    ul 
+        each table in schedules 
+            li Schedules: Id: #{table.user_id}, Day: #{table.day}, Start: #{table.start_at}, End: #{table.end_at}
+
+    
